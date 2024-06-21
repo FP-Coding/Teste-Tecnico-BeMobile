@@ -18,6 +18,7 @@ export default class extends BaseSchema {
       table.integer('client_id').unsigned().references('clients.id').onDelete('CASCADE')
 
       table.timestamp('created_at')
+
       table.timestamp('updated_at')
     })
   }
